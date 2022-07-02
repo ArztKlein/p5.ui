@@ -1,0 +1,24 @@
+{
+  "name": "p5.ui",
+  "version": "0.0.1",
+  "description": "Easy GUI library for p5.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArztKlein/p5.ui.git"
+  },
+  "author": "ArztKlein",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ArztKlein/p5.ui/issues"
+  },
+  "homepage": "https://github.com/ArztKlein/p5.ui#readme",
+  "dependencies": {
+    "uglify-js": "^3.16.1"
+  }
+}
