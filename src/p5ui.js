@@ -32,11 +32,14 @@ p5.prototype.registerMethod('post', p5.prototype.drawGUI);
 p5.prototype.registerMethod('post', p5.prototype.handleEvents);
 
 class Button{
-    constructor(x, y, width, height){
+    constructor(x, y, width, height, text){
         this.x = x;
         this.y = y;
         this.width = width;
         this.height = height;
+        this.text = text;
+        this._textColour = "black";
+        this._textSize = 20;
         this.visible = true;
         this.fillColour = "white";
         this.strokeColour = "black";
@@ -49,6 +52,9 @@ class Button{
         stroke(this.strokeColour);
         strokeWeight(this.weight);
         rect(this.x, this.y, this.width, this.height);
+        fill(this._textColour);
+        textSize(this._textSize);
+        text(this.text, this.x, this.y, this.width, this.height);
     }
 
     fill(colour){
@@ -57,6 +63,14 @@ class Button{
 
     stroke(colour){
         this.strokeColour = colour;
+    }
+
+    textColour(colour){
+        this._textColour = colour;
+    }
+
+    textSize(size){
+        this._textSize = size;
     }
 
     strokeWeight(weight){
